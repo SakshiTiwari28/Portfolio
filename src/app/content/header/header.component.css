@@ -1,0 +1,148 @@
+
+.sidenav-container {
+  max-height: 100%;
+}
+
+.sidenav {
+  max-width: 310px;
+  position: fixed;
+  overflow:hidden;
+  top: 0;
+  left: 0;
+  max-height: 100vh;
+  z-index: 999;
+  background:#373737;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+h1, .nav-link {
+  font-family: 'Arial';
+  color:white;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 0;  
+  line-height: 0em;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  margin-top: 0px;
+}
+
+.mat-nav-list, .nav-link{
+  color: #FFF;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: white;
+  display: block;
+  transition: all ease-out 300ms;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+  
+  a {
+    line-height: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: white;
+    display: block;
+    transition: all ease-out 300ms;
+  }
+
+  .active a {
+    color: white;
+  }
+  
+  :not(.active)::after {
+      opacity: 0.2;
+  }
+  
+  :not(.active):hover a {
+    color: rgba(#FFF, 0.75);
+  }
+  
+
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+img {
+  border-radius: 50%;
+  position: block;
+  height: 180px;
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+
+#name{
+  font-family: 'Acme', sans-serif;
+  position: absolute;
+  font-size: 3em;
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: black;
+  margin-left: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#about{
+  font-family: 'Acme', sans-serif;
+  position: absolute;
+  font-size: 2em;
+  top: 60%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img.home{
+  max-height: 100vh;
+  border-radius: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+@media only screen and (max-width: 601px) {
+  #name, #about {
+    font-size: 10px;
+    font-weight: 1000;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #name, #about{
+    font-size: 30px;
+    
+  }
+}

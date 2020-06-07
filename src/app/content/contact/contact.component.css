@@ -1,0 +1,47 @@
+@media only screen and (max-width: 601px) {
+
+  div#contact.container{
+      margin :0;
+      display: float;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-left: 10px;
+    }  
+  
+  }
+
+h1,h2,h3,h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+
+letter-spacing: 0.1em;
+font-weight: bold;
+
+}
+
+.container{
+  height: 100vh;
+  line-height: 2em;
+  margin-top: 100px;
+  margin-left: 350px;
+}
+
+.row{
+  margin-top: 100px;
+}
+
+a{
+  padding: 40px;
+}
+
+.fa-instagram{
+  color: palevioletred;
+}
+
+.fa-github{
+  color: black;
+}
+
+
+
